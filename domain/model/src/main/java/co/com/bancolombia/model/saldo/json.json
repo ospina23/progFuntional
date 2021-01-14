@@ -1,0 +1,14 @@
+[
+    {
+        saldo=10000,
+        tipo=depositos
+        },
+    {
+        saldo=10000,
+        tipo=fid
+    },
+    {
+        saldo=10000,
+        tipo=tarjetas
+    }
+]
