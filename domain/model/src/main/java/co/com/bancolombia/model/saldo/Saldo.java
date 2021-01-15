@@ -1,14 +1,15 @@
 package co.com.bancolombia.model.saldo;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-
-import java.io.Serializable;
+import lombok.NoArgsConstructor;
 
 @Data
 @Builder(toBuilder = true)
-
-public class Saldo implements Serializable {
+@AllArgsConstructor
+@NoArgsConstructor
+public class Saldo {
     private double saldo;
     private String tipo;
 
