@@ -28,4 +28,5 @@ public class ApiRest {
         return ResponseEntity.ok("No es rentable");
     }
 
+
 }

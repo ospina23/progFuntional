@@ -14,11 +14,12 @@ public class CalculoRendimientoUseCase {
 
 
     public boolean esRestableSaldoMes(List<Saldo> saldo){
-        long valor =  saldo.stream()
-                .map(element -> element.getSaldo()*INTERES)
-                .filter(element -> element > SATISFACTORIO)
-                .count();
-        return validarRentabilidad(valor);
+        boolean valor = saldo.stream()
+                .map(element -> element.getSaldo() * INTERES)
+                .allMatch(element -> element > SATISFACTORIO);
+
+        System.out.println(valor);
+        return  valor;
     }
 
     private boolean validarRentabilidad(long valor) {
